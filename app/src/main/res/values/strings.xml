@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Project3pt</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="wedstrijden">Wedstrijden</string>
+    <string name="voornaam">voornaam</string>
+    <string name="achternaam">achternaam</string>
+    <string name="email">e-mail</string>
+    <string name="paswoord">paswoord</string>
+    <string name="registreren">registreren</string>
+    <string name="aanmelden">aanmelden</string>
+</resources>
