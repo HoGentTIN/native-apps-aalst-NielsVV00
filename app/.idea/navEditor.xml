@@ -17,6 +17,15 @@
                             <option name="y" value="28" />
                           </Point>
                         </option>
+                        <option name="myPositions">
+                          <map>
+                            <entry key="action_homeFragment_to_wedstrijdLijstFragment">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
+                          </map>
+                        </option>
                       </LayoutPositions>
                     </value>
                   </entry>
@@ -46,6 +55,18 @@
                       </LayoutPositions>
                     </value>
                   </entry>
+                  <entry key="maakWedstrijdFragment">
+                    <value>
+                      <LayoutPositions>
+                        <option name="myPosition">
+                          <Point>
+                            <option name="x" value="12" />
+                            <option name="y" value="12" />
+                          </Point>
+                        </option>
+                      </LayoutPositions>
+                    </value>
+                  </entry>
                   <entry key="registreerFragment">
                     <value>
                       <LayoutPositions>
@@ -58,6 +79,44 @@
                         <option name="myPositions">
                           <map>
                             <entry key="action_registreerFragment_to_homeFragment">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
+                          </map>
+                        </option>
+                      </LayoutPositions>
+                    </value>
+                  </entry>
+                  <entry key="wedstrijdFragment">
+                    <value>
+                      <LayoutPositions>
+                        <option name="myPosition">
+                          <Point>
+                            <option name="x" value="256" />
+                            <option name="y" value="12" />
+                          </Point>
+                        </option>
+                      </LayoutPositions>
+                    </value>
+                  </entry>
+                  <entry key="wedstrijd_lijst_Fragment">
+                    <value>
+                      <LayoutPositions>
+                        <option name="myPosition">
+                          <Point>
+                            <option name="x" value="12" />
+                            <option name="y" value="12" />
+                          </Point>
+                        </option>
+                        <option name="myPositions">
+                          <map>
+                            <entry key="action_wedstrijdLijstFragment_to_wedstrijdFragment">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
+                            <entry key="action_wedstrijd_lijst_Fragment_to_maakWedstrijdFragment">
                               <value>
                                 <LayoutPositions />
                               </value>

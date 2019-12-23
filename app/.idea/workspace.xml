@@ -9,7 +9,154 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="72691958-367d-4a10-810d-d91966ac0886" name="Default Changelist" comment="" />
+    <list default="true" id="72691958-367d-4a10-810d-d91966ac0886" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_activity_activity_1_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_activity_activity_ktx_1_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_annotation_annotation_1_1_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_appcompat_appcompat_resources_1_1_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_arch_core_core_common_2_1_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_collection_collection_1_1_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_fragment_fragment_ktx_1_1_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_common_2_1_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_extensions_2_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_process_2_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_service_2_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_viewmodel_ktx_2_1_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_navigation_navigation_common_2_1_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_navigation_navigation_common_ktx_2_1_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_navigation_navigation_fragment_2_1_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_navigation_navigation_fragment_ktx_2_1_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_navigation_navigation_runtime_2_1_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_navigation_navigation_runtime_ktx_2_1_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_navigation_navigation_ui_2_1_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_navigation_navigation_ui_ktx_2_1_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_room_room_common_2_2_2_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_room_room_runtime_2_2_2_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_savedstate_savedstate_1_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_sqlite_sqlite_2_0_1_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_sqlite_sqlite_framework_2_0_1_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_monitor_1_2_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_runner_1_2_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_code_gson_gson_2_8_5_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_dagger_dagger_2_23_2_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_dagger_dagger_android_2_23_2_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_orhanobut_logger_2_2_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_moshi_moshi_1_8_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_moshi_moshi_kotlin_1_8_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_okhttp3_okhttp_3_12_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_okio_okio_1_16_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_retrofit2_adapter_rxjava2_2_6_2_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_retrofit2_converter_gson_2_6_2_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_retrofit2_converter_scalars_2_6_2_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_retrofit2_retrofit_2_6_2_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_wdullaer_materialdatetimepicker_4_2_3_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__io_reactivex_rxjava2_rxandroid_2_1_1_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__io_reactivex_rxjava2_rxjava_2_2_10_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_anko_anko_0_10_8_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_anko_anko_appcompat_v7_0_10_8_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_anko_anko_appcompat_v7_commons_0_10_8_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_anko_anko_appcompat_v7_coroutines_0_10_8_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_anko_anko_commons_0_10_8_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_anko_anko_coroutines_0_10_8_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_anko_anko_sdk27_0_10_8_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_anko_anko_sdk27_coroutines_0_10_8_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_anko_anko_sqlite_0_10_8_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_anko_anko_support_v4_0_10_8_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_anko_anko_support_v4_commons_0_10_8_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_anko_appcompatV7_base_0_10_8_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_anko_commons_base_0_10_8_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_anko_platform_base_0_10_8_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_anko_sqlite_base_0_10_8_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_anko_supportV4_base_0_10_8_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_reflect_1_2_71_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlinx_kotlinx_coroutines_android_1_1_1_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlinx_kotlinx_coroutines_core_1_1_1_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlinx_kotlinx_coroutines_core_common_1_1_1_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_reactivestreams_reactive_streams_1_0_2_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/project3pt/fragments/home/HomeFragment.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/project3pt/fragments/maakWedstrijd/MaakWedstrijdFragment.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/project3pt/repositories/IUserRepository.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/project3pt/repositories/UserRepository.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/project3pt/services/UserService.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/layout/fragment_maak_wedstrijd.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/codeStyles/Project.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_navigation_navigation_common_1_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_navigation_navigation_common_ktx_1_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_navigation_navigation_fragment_1_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_navigation_navigation_fragment_ktx_1_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_navigation_navigation_runtime_1_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_navigation_navigation_runtime_ktx_1_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_navigation_navigation_ui_1_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_navigation_navigation_ui_ktx_1_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_annotation_annotation_1_0_2_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_appcompat_appcompat_1_0_2_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_appcompat_appcompat_1_1_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_arch_core_core_common_2_0_0_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_arch_core_core_runtime_2_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_arch_core_core_runtime_2_0_1_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_asynclayoutinflater_asynclayoutinflater_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_asynclayoutinflater_asynclayoutinflater_1_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_cardview_cardview_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_cardview_cardview_1_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_collection_collection_1_0_0_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_constraintlayout_constraintlayout_1_1_3_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_constraintlayout_constraintlayout_1_1_3_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_coordinatorlayout_coordinatorlayout_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_coordinatorlayout_coordinatorlayout_1_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_core_core_1_0_2_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_core_core_1_1_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_core_core_ktx_1_0_2_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_core_core_ktx_1_1_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_cursoradapter_cursoradapter_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_cursoradapter_cursoradapter_1_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_customview_customview_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_customview_customview_1_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_databinding_databinding_adapters_3_5_1_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_databinding_databinding_adapters_3_5_1_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_databinding_databinding_runtime_3_5_1_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_databinding_databinding_runtime_3_5_1_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_documentfile_documentfile_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_documentfile_documentfile_1_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_drawerlayout_drawerlayout_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_drawerlayout_drawerlayout_1_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_fragment_fragment_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_fragment_fragment_1_1_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_interpolator_interpolator_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_interpolator_interpolator_1_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_legacy_legacy_support_core_ui_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_legacy_legacy_support_core_ui_1_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_legacy_legacy_support_core_utils_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_legacy_legacy_support_core_utils_1_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_legacy_legacy_support_v4_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_legacy_legacy_support_v4_1_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_common_2_0_0_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_livedata_2_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_livedata_2_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_livedata_core_2_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_livedata_core_2_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_runtime_2_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_runtime_2_1_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_viewmodel_2_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_viewmodel_2_1_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_loader_loader_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_loader_loader_1_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_localbroadcastmanager_localbroadcastmanager_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_localbroadcastmanager_localbroadcastmanager_1_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_media_media_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_media_media_1_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_print_print_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_print_print_1_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_recyclerview_recyclerview_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_recyclerview_recyclerview_1_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_slidingpanelayout_slidingpanelayout_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_slidingpanelayout_slidingpanelayout_1_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_swiperefreshlayout_swiperefreshlayout_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_swiperefreshlayout_swiperefreshlayout_1_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_core_1_1_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_espresso_espresso_core_3_1_1_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_espresso_espresso_core_3_2_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_espresso_espresso_idling_resource_3_1_1_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_espresso_espresso_idling_resource_3_2_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_ext_junit_1_1_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_monitor_1_1_1_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_runner_1_1_1_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_transition_transition_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_transition_transition_1_0_1_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_vectordrawable_vectordrawable_1_0_1_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_vectordrawable_vectordrawable_1_1_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_vectordrawable_vectordrawable_animated_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_vectordrawable_vectordrawable_animated_1_1_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_versionedparcelable_versionedparcelable_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_versionedparcelable_versionedparcelable_1_1_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_viewpager_viewpager_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_viewpager_viewpager_1_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_material_material_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_material_material_1_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/navEditor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/navEditor.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/project3pt/HomeFragment.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/project3pt/LoginFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/project3pt/fragments/login/LoginFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/project3pt/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/project3pt/MainActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/project3pt/RegistreerFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/project3pt/fragments/registreer/RegistreerFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/drawable-v24/icon_lock.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/drawable-v24/icon_user.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/drawable-v24/user.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/drawable/finish.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/drawable/finish.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/fragment_home.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/fragment_home.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/fragment_login.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/fragment_login.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/fragment_registreer.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/fragment_registreer.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/navigation/navigation.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/navigation/navigation.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/values/colors.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/values/styles.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/values/styles.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../build.gradle" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,8 +166,11 @@
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="c2030917" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="Pixel_API_28" />
   <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$/..">
+      <ProjectState />
+    </projectState>
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
@@ -35,98 +185,92 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/res/values/styles.xml">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/project3pt/fragments/wedstrijd/WedstrijdFragment.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="7" column="58" selection-start-line="7" selection-start-column="58" selection-end-line="7" selection-end-column="58" />
+            <state relative-caret-position="220">
+              <caret line="22" column="35" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="35" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/res/layout/fragment_login.xml">
-          <provider editor-type-id="android-designer2" />
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/project3pt/repositories/UserRepository.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="962">
-              <caret line="95" column="57" selection-start-line="95" selection-start-column="57" selection-end-line="95" selection-end-column="57" />
-              <folding>
-                <element signature="e#1485#1500#0" expanded="true" />
-                <element signature="e#2165#2183#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="260">
+              <caret line="23" column="34" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="34" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/res/drawable-v24/user.png">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/res/values/colors.xml">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/project3pt/services/UserService.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="69">
-              <caret line="3" column="33" selection-start-line="3" selection-start-column="33" selection-end-line="3" selection-end-column="33" />
+            <state relative-caret-position="300">
+              <caret line="17" column="19" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/res/drawable-v24/icon_user.png">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/res/drawable-v24/icon_lock.png">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/res/layout/fragment_registreer.xml">
-          <provider editor-type-id="android-designer2" />
+        <entry file="file://$PROJECT_DIR$/src/main/res/navigation/navigation.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="364">
-              <caret line="113" column="16" selection-start-line="113" selection-start-column="16" selection-end-line="113" selection-end-column="54" />
-              <folding>
-                <element signature="e#1471#1486#0" expanded="true" />
-                <element signature="e#2139#2157#0" expanded="true" />
-                <element signature="e#2393#2411#0" expanded="true" />
-                <element signature="e#2878#2898#0" expanded="true" />
-                <element signature="e#3134#3154#0" expanded="true" />
-                <element signature="e#3622#3640#0" expanded="true" />
-                <element signature="e#4745#4766#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="324">
+              <caret line="55" column="13" selection-start-line="55" selection-start-column="13" selection-end-line="55" selection-end-column="13" />
+            </state>
+          </provider>
+          <provider editor-type-id="nav-designer" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/project3pt/models/Wedstrijd.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="260">
+              <caret line="20" column="25" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/res/values/strings.xml">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/project3pt/utils/DateFormatter.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="11" column="38" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
+            <state relative-caret-position="180">
+              <caret line="13" column="1" lean-forward="true" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/project3pt/RegistreerFragment.kt">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/project3pt/fragments/maakWedstrijd/MaakWedstrijdFragment.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="46">
-              <caret line="11" column="67" selection-start-line="11" selection-start-column="67" selection-end-line="11" selection-end-column="67" />
-              <folding>
-                <element signature="e#44#378#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="240">
+              <caret line="41" column="48" selection-start-line="41" selection-start-column="48" selection-end-line="41" selection-end-column="48" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/res/layout/fragment_home.xml">
-          <provider selected="true" editor-type-id="android-designer2" />
-          <provider editor-type-id="text-editor">
-            <state relative-caret-position="23">
-              <caret line="3" column="63" selection-start-line="3" selection-start-column="63" selection-end-line="3" selection-end-column="63" />
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/project3pt/fragments/maakWedstrijd/MaakWedstrijdViewModel.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="81">
+              <caret line="33" column="8" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/project3pt/repositories/IUserRepository.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="30" selection-start-column="30" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/project3pt/fragments/wedstrijd/WedstrijdViewModel.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="540">
+              <caret line="33" selection-start-line="33" selection-end-line="33" />
             </state>
           </provider>
         </entry>
@@ -138,13 +282,25 @@
       <list>
         <option value="navigationResourceFile" />
         <option value="resourceFile" />
+        <option value="layoutResourceFile_vertical" />
+        <option value="Kotlin Class" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
       <find>nav</find>
+      <find>project</find>
+      <find>android.example.</find>
+      <find>wedstrijd</find>
+      <find>getWedstrijdFromApi</find>
+      <find>LoadWedstrijd</find>
+      <find>getWedstrijd</find>
+      <find>Recyclerview</find>
     </findStrings>
+    <dirStrings>
+      <dir>C:\Users\Niels\Documents\SCHOOL\Hogent - Toegepaste informatica\Jaar 3\Semester 1\Android\Project3PT\app</dir>
+    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -152,52 +308,45 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/build.gradle" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/project3pt/HomeFragment.kt" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/project3pt/MainActivity.kt" />
-        <option value="$PROJECT_DIR$/src/main/res/layout/activity_main.xml" />
-        <option value="$PROJECT_DIR$/src/main/res/navigation/navigation.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/project3pt/LoginFragment.kt" />
         <option value="$PROJECT_DIR$/src/main/res/values/strings.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/project3pt/RegistreerFragment.kt" />
-        <option value="$PROJECT_DIR$/src/main/res/layout/fragment_registreer.xml" />
         <option value="$PROJECT_DIR$/src/main/res/values/colors.xml" />
         <option value="$PROJECT_DIR$/src/main/res/values/styles.xml" />
-        <option value="$PROJECT_DIR$/src/main/res/layout/fragment_login.xml" />
         <option value="$PROJECT_DIR$/src/main/res/layout/fragment_home.xml" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectConfigurationFiles">
-    <option name="files">
-      <list>
-        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
-        <option value="$PROJECT_DIR$/.idea/render.experimental.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_cardview_cardview_1_0_0_aar.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_recyclerview_recyclerview_1_0_0_aar.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_transition_transition_1_0_0_aar.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_material_material_1_0_0_aar.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_navigation_navigation_common_1_0_0_aar.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_navigation_navigation_common_ktx_1_0_0_aar.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_navigation_navigation_fragment_1_0_0_aar.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_navigation_navigation_fragment_ktx_1_0_0_aar.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_navigation_navigation_runtime_1_0_0_aar.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_navigation_navigation_runtime_ktx_1_0_0_aar.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_navigation_navigation_ui_1_0_0_aar.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_navigation_navigation_ui_ktx_1_0_0_aar.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_legacy_legacy_support_v4_1_0_0_aar.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_media_media_1_0_0_aar.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_databinding_databinding_adapters_3_5_1_aar.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_databinding_databinding_common_3_5_1_jar.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_databinding_databinding_runtime_3_5_1_aar.xml" />
-        <option value="$PROJECT_DIR$/.idea/navEditor.xml" />
+        <option value="$PROJECT_DIR$/src/main/res/layout/activity_main.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/project3pt/MainActivity.kt" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/project3pt/HomeFragment.kt" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/project3pt/RegistreerFragment.kt" />
+        <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/project3pt/LoginFragment.kt" />
+        <option value="$PROJECT_DIR$/src/main/res/layout/fragment_login.xml" />
+        <option value="$PROJECT_DIR$/src/main/res/layout/fragment_registreer.xml" />
+        <option value="$PROJECT_DIR$/src/main/res/layout/fragment_wedstrijd_lijst.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/project3pt/WedstrijdLijstFragment.kt" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/project3pt/fragments/HomeFragment.kt" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/project3pt/fragments/LoginFragment.kt" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/project3pt/fragments/RegistreerFragment.kt" />
+        <option value="$PROJECT_DIR$/src/main/res/layout/deelnemer_view_item.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/project3pt/fragments/wedstrijdLijst/WedstrijdLijstFragment.kt" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/project3pt/fragments/wedstrijd/WedstrijdViewModel.kt" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/project3pt/fragments/wedstrijd/DeelnemerAdapter.kt" />
+        <option value="$PROJECT_DIR$/src/main/res/navigation/navigation.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/project3pt/fragments/wedstrijd/WedstrijdViewModelFactory.kt" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/project3pt/fragments/wedstrijd/WedstrijdFragment.kt" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/project3pt/repositories/WedstrijdRepository.kt" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/project3pt/services/WedstrijdService.kt" />
+        <option value="$PROJECT_DIR$/src/main/res/layout/fragment_wedstrijd.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/project3pt/IUserRepository.kt" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/project3pt/UserRepository.kt" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/project3pt/UserService.kt" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/project3pt/services/UserService.kt" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="380" />
-    <option name="width" value="1540" />
-    <option name="height" value="1105" />
+    <option name="x" value="950" />
+    <option name="y" value="-10" />
+    <option name="width" value="980" />
+    <option name="height" value="1060" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -205,6 +354,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane" />
       <pane id="AndroidView">
         <subPane>
           <expand>
@@ -226,37 +377,24 @@
             <path>
               <item name="app" type="1abcf292:AndroidViewProjectNode" />
               <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="res" type="d4f16f75:AndroidResFolderNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="project3pt" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="fragments" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="app" type="1abcf292:AndroidViewProjectNode" />
               <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="res" type="d4f16f75:AndroidResFolderNode" />
-              <item name="drawable" type="ddeffd01:AndroidResFolderTypeNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="project3pt" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="fragments" type="462c0819:PsiDirectoryNode" />
+              <item name="maakWedstrijd" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="app" type="1abcf292:AndroidViewProjectNode" />
               <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="res" type="d4f16f75:AndroidResFolderNode" />
-              <item name="font" type="ddeffd01:AndroidResFolderTypeNode" />
-            </path>
-            <path>
-              <item name="app" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="res" type="d4f16f75:AndroidResFolderNode" />
-              <item name="layout" type="ddeffd01:AndroidResFolderTypeNode" />
-            </path>
-            <path>
-              <item name="app" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="res" type="d4f16f75:AndroidResFolderNode" />
-              <item name="navigation" type="ddeffd01:AndroidResFolderTypeNode" />
-            </path>
-            <path>
-              <item name="app" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="res" type="d4f16f75:AndroidResFolderNode" />
-              <item name="values" type="ddeffd01:AndroidResFolderTypeNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="project3pt" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="app" type="1abcf292:AndroidViewProjectNode" />
@@ -266,20 +404,20 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
-      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/res/drawable-v24" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/res/drawable-v24" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../Project 3/Frontend_Android" />
     <property name="not.eligible.for.single.variant.sync" value="true" />
     <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Niels\Documents\SCHOOL\Hogent - Toegepaste informatica\Jaar 3\Semester 1\Android\Project3PT\app\src\main\java\com\example\project3pt" />
       <recent name="C:\Users\Niels\Documents\SCHOOL\Hogent - Toegepaste informatica\Jaar 3\Semester 1\Android\Project3PT\app\src\main\res\drawable-v24" />
       <recent name="C:\Users\Niels\Documents\SCHOOL\Hogent - Toegepaste informatica\Jaar 3\Semester 1\Android\Project3PT\app\src\main\res\font" />
     </key>
@@ -376,7 +514,7 @@
     <editor active="true" />
     <layout>
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.2637584" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.25033557" />
       <window_info id="Structure" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Build Variants" order="4" side_tool="true" />
@@ -384,25 +522,26 @@
       <window_info id="Designer" order="6" />
       <window_info id="Resources Explorer" order="7" />
       <window_info id="Capture Tool" order="8" />
-      <window_info anchor="bottom" id="Run" sideWeight="0.4986577" weight="0.32960895" />
-      <window_info anchor="bottom" id="Debug" weight="0.32960895" />
       <window_info anchor="bottom" id="Version Control" order="0" />
       <window_info anchor="bottom" id="Logcat" order="1" weight="0.32960895" />
       <window_info anchor="bottom" id="TODO" order="2" />
-      <window_info anchor="bottom" id="Terminal" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="4" sideWeight="0.5013423" side_tool="true" weight="0.32960895" />
-      <window_info anchor="bottom" id="Build" order="5" sideWeight="0.4986577" weight="0.32960895" />
-      <window_info anchor="bottom" id="Android Profiler" order="6" />
-      <window_info anchor="right" id="Preview" />
+      <window_info anchor="bottom" id="Terminal" order="3" weight="0.32960895" />
+      <window_info anchor="bottom" id="Event Log" order="4" sideWeight="0.504698" side_tool="true" visible="true" weight="0.3289855" />
+      <window_info anchor="bottom" id="Build" order="5" sideWeight="0.49530202" visible="true" weight="0.3289855" />
+      <window_info anchor="bottom" id="Android Profiler" order="6" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="7" sideWeight="0.63825506" weight="0.42318437" />
+      <window_info anchor="bottom" id="Debug" order="8" weight="0.32960895" />
+      <window_info anchor="bottom" id="Find" order="9" />
       <window_info anchor="right" id="Device File Explorer" order="0" side_tool="true" />
       <window_info anchor="right" id="Capture Analysis" order="1" />
       <window_info anchor="right" id="Gradle" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info anchor="right" id="Palette&#9;" order="4" />
+      <window_info anchor="right" id="Preview" order="5" />
     </layout>
     <layout-to-restore>
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.2637584" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.21744967" />
       <window_info id="Structure" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Build Variants" order="4" side_tool="true" />
@@ -410,14 +549,14 @@
       <window_info id="Designer" order="6" />
       <window_info id="Resources Explorer" order="7" />
       <window_info id="Capture Tool" order="8" />
-      <window_info anchor="bottom" id="Run" order="0" sideWeight="0.4986577" weight="0.32960895" />
+      <window_info anchor="bottom" id="Run" order="0" sideWeight="0.49798658" weight="0.32960895" />
       <window_info anchor="bottom" id="Debug" order="1" weight="0.32960895" />
       <window_info anchor="bottom" id="Version Control" order="2" />
       <window_info anchor="bottom" id="Logcat" order="3" weight="0.32960895" />
       <window_info anchor="bottom" id="TODO" order="4" />
       <window_info anchor="bottom" id="Terminal" order="5" />
-      <window_info anchor="bottom" id="Event Log" order="6" sideWeight="0.5013423" side_tool="true" weight="0.32960895" />
-      <window_info anchor="bottom" id="Build" order="7" sideWeight="0.4986577" weight="0.32960895" />
+      <window_info anchor="bottom" id="Event Log" order="6" sideWeight="0.50201344" side_tool="true" weight="0.32960895" />
+      <window_info anchor="bottom" id="Build" order="7" sideWeight="0.49798658" visible="true" weight="0.32960895" />
       <window_info anchor="bottom" id="Android Profiler" order="8" />
       <window_info anchor="right" id="Preview" order="0" />
       <window_info anchor="right" id="Device File Explorer" order="1" side_tool="true" />
@@ -428,63 +567,7 @@
     </layout-to-restore>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/project3pt/MainActivity.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="8" column="57" selection-start-line="8" selection-start-column="57" selection-end-line="8" selection-end-column="57" />
-          <folding>
-            <element signature="e#32#156#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-345" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="109">
-          <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_main.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="14" column="48" selection-start-line="14" selection-start-column="48" selection-end-line="14" selection-end-column="48" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/project3pt/HomeFragment.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="343">
-          <caret line="16" column="40" selection-start-line="16" selection-start-column="40" selection-end-line="16" selection-end-column="40" />
-          <folding>
-            <element signature="e#43#265#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/res/drawable/logo3pt.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/res/drawable/logo3pt.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/res/navigation/navigation.xml">
-      <provider selected="true" editor-type-id="nav-designer" />
-      <provider editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/project3pt/LoginFragment.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="11" selection-start-line="11" selection-end-line="11" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/drawable/logo3pt.xml" />
     <entry file="file://$PROJECT_DIR$/src/main/res/values/strings.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="253">
@@ -492,73 +575,254 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/project3pt/RegistreerFragment.kt">
+    <entry file="file://$PROJECT_DIR$/src/main/res/drawable-v24/icon_user.png" />
+    <entry file="file://$PROJECT_DIR$/src/main/res/drawable-v24/icon_lock.png" />
+    <entry file="file://$PROJECT_DIR$/src/main/res/drawable/logo3pt.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/drawable/finish.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/project3pt/MainActivity.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="11" column="67" selection-start-line="11" selection-start-column="67" selection-end-line="11" selection-end-column="67" />
+        <state relative-caret-position="207">
+          <caret line="12" column="46" selection-start-line="12" selection-start-column="46" selection-end-line="12" selection-end-column="46" />
           <folding>
-            <element signature="e#44#378#0" expanded="true" />
+            <element signature="e#32#156#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/res/drawable-v24/icon_lock.png">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/project3pt/HomeFragment.kt" />
+    <entry file="file://$PROJECT_DIR$/src/main/res/drawable/user.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/res/drawable-v24/icon_user.png">
-      <provider selected="true" editor-type-id="images" />
+    <entry file="file://$PROJECT_DIR$/src/main/res/drawable-v24/user.png" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/project3pt/LoginFragment.kt" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/project3pt/RegistreerFragment.kt" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/project3pt/WedstrijdLijstFragment.kt" />
+    <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_main.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/res/drawable-v24/user.png">
-      <provider selected="true" editor-type-id="images" />
+    <entry file="file://$PROJECT_DIR$/src/main/res/layout/fragment_login.xml">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="2185">
+          <caret line="95" column="57" selection-start-line="95" selection-start-column="57" selection-end-line="95" selection-end-column="57" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/layout/fragment_registreer.xml">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="2599">
+          <caret line="113" column="16" selection-start-line="113" selection-start-column="16" selection-end-line="113" selection-end-column="54" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/layout/fragment_wedstrijd_lijst.xml">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="16" column="48" selection-start-line="16" selection-start-column="48" selection-end-line="16" selection-end-column="48" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/res/values/colors.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="69">
-          <caret line="3" column="33" selection-start-line="3" selection-start-column="33" selection-end-line="3" selection-end-column="33" />
+          <caret line="3" column="40" selection-start-line="3" selection-start-column="34" selection-end-line="3" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/layout/fragment_home.xml">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="21" column="42" selection-start-line="21" selection-start-column="42" selection-end-line="21" selection-end-column="42" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/generated/source/navigation-args/debug/android/example/projectsharptake3/HomeFragmentDirections.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/project3pt/fragments/HomeFragment.kt" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/project3pt/fragments/login/LoginFragment.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="30" selection-start-column="30" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/project3pt/fragments/registreer/RegistreerFragment.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="30" selection-start-column="30" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/layout/wedstrijd_lijst_item.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/layout/deelnemer_view_item.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="16" column="30" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/project3pt/fragments/wedstrijdLijst/WedstrijdLijstFragment.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="44" column="28" selection-start-line="44" selection-start-column="28" selection-end-line="44" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-437" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../settings.gradle">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-805">
+          <caret line="41" column="14" selection-start-line="41" selection-start-column="14" selection-end-line="41" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/project3pt/fragments/wedstrijd/WedstrijdViewModelFactory.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="13" column="9" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
+          <folding>
+            <element signature="e#52#131#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/project3pt/repositories/WedstrijdRepository.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="840">
+          <caret line="53" column="30" selection-start-line="53" selection-start-column="30" selection-end-line="53" selection-end-column="30" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/res/values/styles.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
+        <state relative-caret-position="140">
           <caret line="7" column="58" selection-start-line="7" selection-start-column="58" selection-end-line="7" selection-end-column="58" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/res/layout/fragment_registreer.xml">
-      <provider editor-type-id="android-designer2" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/project3pt/services/WedstrijdService.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="113" column="16" selection-start-line="113" selection-start-column="16" selection-end-line="113" selection-end-column="54" />
-          <folding>
-            <element signature="e#1471#1486#0" expanded="true" />
-            <element signature="e#2139#2157#0" expanded="true" />
-            <element signature="e#2393#2411#0" expanded="true" />
-            <element signature="e#2878#2898#0" expanded="true" />
-            <element signature="e#3134#3154#0" expanded="true" />
-            <element signature="e#3622#3640#0" expanded="true" />
-            <element signature="e#4745#4766#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="200">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/res/layout/fragment_login.xml">
-      <provider editor-type-id="android-designer2" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/project3pt/fragments/wedstrijd/DeelnemerAdapter.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="962">
-          <caret line="95" column="57" selection-start-line="95" selection-start-column="57" selection-end-line="95" selection-end-column="57" />
-          <folding>
-            <element signature="e#1485#1500#0" expanded="true" />
-            <element signature="e#2165#2183#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="180">
+          <caret line="14" column="9" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/res/layout/fragment_home.xml">
-      <provider selected="true" editor-type-id="android-designer2" />
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="3" column="63" selection-start-line="3" selection-start-column="63" selection-end-line="3" selection-end-column="63" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/project3pt/fragments/wedstrijdLijst/WedstrijdLijstViewModel.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="13" column="6" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/layout/fragment_wedstrijd.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="21" column="32" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/project3pt/fragments/wedstrijd/WedstrijdFragment.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="22" column="35" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/project3pt/repositories/UserRepository.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="23" column="34" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/project3pt/services/UserService.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="17" column="19" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/project3pt/repositories/IUserRepository.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="30" selection-start-column="30" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/project3pt/fragments/wedstrijd/WedstrijdViewModel.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/navigation/navigation.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="55" column="13" selection-start-line="55" selection-start-column="13" selection-end-line="55" selection-end-column="13" />
+        </state>
+      </provider>
+      <provider editor-type-id="nav-designer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/project3pt/models/Wedstrijd.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="20" column="25" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/project3pt/utils/DateFormatter.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="13" column="1" lean-forward="true" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/project3pt/fragments/maakWedstrijd/MaakWedstrijdFragment.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="41" column="48" selection-start-line="41" selection-start-column="48" selection-end-line="41" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/project3pt/fragments/maakWedstrijd/MaakWedstrijdViewModel.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="33" column="8" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="8" />
         </state>
       </provider>
     </entry>

@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/navigation"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
     app:startDestination="@id/loginFragment">
     <fragment
         android:id="@+id/loginFragment"
-        android:name="android.example.projectsharptake3.LoginFragment"
-        android:label="LoginFragment" >
+        android:name="com.example.project3pt.LoginFragment"
+        android:label="Login">
         <action
             android:id="@+id/action_loginFragment_to_registreerFragment"
             app:destination="@id/registreerFragment" />
@@ -15,14 +17,44 @@
     </fragment>
     <fragment
         android:id="@+id/registreerFragment"
-        android:name="android.example.projectsharptake3.RegistreerFragment"
-        android:label="RegistreerFragment" >
+        android:name="com.example.project3pt.RegistreerFragment"
+        android:label="Registreren">
         <action
             android:id="@+id/action_registreerFragment_to_homeFragment"
             app:destination="@id/homeFragment" />
     </fragment>
     <fragment
         android:id="@+id/homeFragment"
-        android:name="android.example.projectsharptake3.HomeFragment"
-        android:label="HomeFragment" />
+        android:name="com.example.project3pt.HomeFragment"
+        android:label="Home">
+        <action
+            android:id="@+id/action_homeFragment_to_wedstrijdLijstFragment"
+            app:destination="@id/wedstrijd_lijst_Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/wedstrijd_lijst_Fragment"
+        android:name="com.example.project3pt.WedstrijdLijstFragment"
+        android:label="Wedstrijden"
+        tools:layout="@layout/fragment_wedstrijd_lijst">
+        <action
+            android:id="@+id/action_wedstrijdLijstFragment_to_wedstrijdFragment"
+            app:destination="@id/wedstrijdFragment">
+        </action>
+        <action
+            android:id="@+id/action_wedstrijd_lijst_Fragment_to_maakWedstrijdFragment"
+            app:destination="@id/maakWedstrijdFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/wedstrijdFragment"
+        android:name="com.example.project3pt.WedstrijdFragment"
+        android:label="Wedstrijd"
+        tools:layout="@layout/fragment_wedstrijd">
+        <argument
+            android:name="wedstrijdKey"
+            app:argType="long"/>
+    </fragment>
+    <fragment
+        android:id="@+id/maakWedstrijdFragment"
+        android:name="com.example.project3pt.fragments.maakWedstrijd.MaakWedstrijdFragment"
+        android:label="MaakWedstrijdFragment" />
 </navigation>

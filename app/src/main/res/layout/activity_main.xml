@@ -8,7 +8,6 @@
 
         <!-- Login fragment inladen -->
         <fragment
-
             android:id="@+id/fragmentID"
             android:name="androidx.navigation.fragment.NavHostFragment"
             android:layout_width="match_parent"
