@@ -131,7 +131,7 @@
                     android:layout_height="wrap_content"
                     android:backgroundTint="@color/colorSecondary"
                     android:text="@string/registreren"
-                    android:textColor="@color/colorAccent" />
+                    android:textColor="@color/white" />
             </LinearLayout>
 
 

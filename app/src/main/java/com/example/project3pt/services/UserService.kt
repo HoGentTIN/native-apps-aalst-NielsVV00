@@ -1,6 +1,8 @@
 package com.example.project3pt.services
 
 import com.example.project3pt.models.AuthResponse
+import com.example.project3pt.models.Deelnemer
+import com.example.project3pt.models.Wedstrijd
 import okhttp3.RequestBody
 import retrofit2.http.*
 
@@ -26,5 +28,9 @@ interface UserService {
     suspend fun register(
         @Body request : RequestBody
     ): AuthResponse
+
+    @GET("gebruiker/wedstrijden")
+    suspend fun getWedstrijden(): List<Wedstrijd>
+
 }
 

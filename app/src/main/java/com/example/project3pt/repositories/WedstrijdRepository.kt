@@ -1,25 +1,50 @@
 package com.example.project3pt.repositories
 
 import android.content.Context
+import android.content.SharedPreferences
+import android.net.ConnectivityManager
+import android.net.NetworkInfo
 import android.util.Log
+import androidx.core.content.ContextCompat.getSystemService
 import com.example.project3pt.App
+import com.example.project3pt.database.Database3PT
 import com.example.project3pt.models.Deelnemer
+import com.example.project3pt.models.MijnWedstrijden
 import com.example.project3pt.models.Wedstrijd
 import com.example.project3pt.services.WedstrijdService
+import com.google.gson.Gson
 import okhttp3.MediaType
 import okhttp3.RequestBody
 import org.json.JSONObject
-import java.lang.Exception
-import java.util.*
 import javax.inject.Inject
 
+
 class WedstrijdRepository(private val context: Context): IWedstrijdRepository {
+
+
+    @Inject
+    lateinit var userRepository: IUserRepository
 
     @Inject
     lateinit var wedstrijdService: WedstrijdService
 
+    private val database = Database3PT.getInstance(context)
+    private val wedstrijdDao = database.wedstrijdDao
+    private var sharedPreferences : SharedPreferences = context.getSharedPreferences("Preferences", 0)
+
     init {
         App.appComponent.inject(this)
+    }
+
+    override suspend fun refreshWedstrijden(): List<Wedstrijd>{
+        Log.i("net", isNetworkAvailable().toString())
+        if(isNetworkAvailable()){
+            wedstrijdDao.nukeTable()
+            getWedstrijdenFromApi().forEach {
+                wedstrijdDao.insert(it)
+            }
+        }
+        return wedstrijdDao.getAll()
     }
 
     override suspend fun getWedstrijdenFromApi(): List<Wedstrijd> {
@@ -31,23 +56,57 @@ class WedstrijdRepository(private val context: Context): IWedstrijdRepository {
         }catch (e: Exception){
             Log.e("loadWedstrijden", "Failed to load: " + e.message)
         }
-        return ArrayList<Wedstrijd>()
+        return ArrayList()
     }
 
-    override suspend fun getWedstrijdFromApi(id: Long): Wedstrijd {
-        lateinit var wedstrijd: Wedstrijd
-        Log.i("wedstrijdid", id.toString())
-        try {
-            wedstrijd = wedstrijdService.getWedstrijd(id)
-            Log.i("wedstrijd", wedstrijd.toString())
+    override suspend fun getWedstrijd(id: Long): Wedstrijd {
+        return wedstrijdDao.get(id)
+    }
 
-        }catch (e: Exception){
-            Log.e("LoadWedstrijd", "Failed to load: " + e.message)
+    override suspend fun refreshDeelnemers(id: Long): List<Deelnemer>?{
+        if(isNetworkAvailable()){
+            return getDeelnemersFromWedstrijd(id)
         }
-        return wedstrijd
+        return ArrayList()
     }
 
-    override suspend fun getDeelnemersFromWedstrijd(id: Long): List<Deelnemer> {
+    override suspend fun getMijnWedstrijden(): List<Wedstrijd>? {
+        val mijnWedstrijden = getMijnWedstrijdenFromShared()
+        if(!mijnWedstrijden.isNullOrEmpty()){
+            return mijnWedstrijden
+        }else{
+            val mijnWedstrijdenFromApi =  userRepository.getMijnWedstrijden()
+            saveMijnWedstrijden(mijnWedstrijdenFromApi)
+            return mijnWedstrijdenFromApi
+        }
+    }
+
+    override fun getMijnWedstrijdenFromShared(): List<Wedstrijd>?{
+        val mijnWedstrijdenString = sharedPreferences.getString("mijnWedstrijden", null)
+        return Gson().fromJson(mijnWedstrijdenString, MijnWedstrijden::class.java).wedstrijden
+    }
+
+    override fun saveMijnWedstrijden(wedstrijden: List<Wedstrijd>) {
+        val mijnWedstrijden = MijnWedstrijden(wedstrijden)
+        sharedPreferences.edit().putString("mijnWedstrijden", Gson().toJson(mijnWedstrijden)).apply()
+    }
+
+    override suspend fun addOneToMijnWedstrijden(wedstrijd: Wedstrijd) {
+        var mijn: MutableList<Wedstrijd>? = getMijnWedstrijden()?.toMutableList()
+        if(mijn.isNullOrEmpty()){
+            mijn = MutableList(1){wedstrijd}
+        }else{
+            mijn.add(wedstrijd)
+        }
+        saveMijnWedstrijden(mijn)
+    }
+
+    override fun logout() {
+        saveMijnWedstrijden(listOf())
+        userRepository.logout()
+    }
+
+    override suspend fun getDeelnemersFromWedstrijd(id: Long): List<Deelnemer>? {
         lateinit var deelnemers: List<Deelnemer>
         try {
             deelnemers = wedstrijdService.getDeelnemers(id).sortedWith(compareBy({it.voornaam.toLowerCase()}, {it.achternaam.toLowerCase()}))
@@ -87,5 +146,12 @@ class WedstrijdRepository(private val context: Context): IWedstrijdRepository {
             Log.e("neemDeel", "Failed because: " + e.message)
         }
         return bool
+    }
+
+    private fun isNetworkAvailable(): Boolean {
+        val cm = context.getSystemService(Context.CONNECTIVITY_SERVICE) as ConnectivityManager
+        var activeNetworkInfo: NetworkInfo? = null
+        activeNetworkInfo = cm.activeNetworkInfo
+        return activeNetworkInfo != null && activeNetworkInfo.isConnectedOrConnecting
     }
 }

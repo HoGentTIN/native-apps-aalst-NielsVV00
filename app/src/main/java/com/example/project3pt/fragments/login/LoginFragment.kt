@@ -35,8 +35,7 @@ class LoginFragment : Fragment() /*,AdapterView.OnItemSelectedListener*/ {
 
         loginViewModel.loginSucces.observe(viewLifecycleOwner, androidx.lifecycle.Observer { result ->
             if(result){
-                Toast.makeText(context, "Ingelogd!", Toast.LENGTH_LONG).show()
-                findNavController().navigate(R.id.action_loginFragment_to_homeFragment)
+                findNavController().navigate(R.id.action_loginFragment_to_mijnWedstrijdLijstFragment)
             }
         })
 

@@ -1,5 +1,7 @@
 package com.example.project3pt.repositories
 
+import com.example.project3pt.models.Wedstrijd
+
 interface IUserRepository {
 
     /**
@@ -28,7 +30,9 @@ interface IUserRepository {
 
     fun getUserNaam() : String
 
-    suspend fun logout()
+    suspend fun getMijnWedstrijden(): List<Wedstrijd>
+
+    fun logout()
 
     // LOGIN
     suspend fun login(email: String, password: String): Boolean

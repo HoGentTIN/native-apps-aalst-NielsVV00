@@ -2,7 +2,6 @@ package com.example.project3pt.models
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey
-import java.sql.Date
 
 @Entity(tableName = "deelnemer_table")
 data class Deelnemer(

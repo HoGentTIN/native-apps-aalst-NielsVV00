@@ -5,6 +5,7 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.view.isVisible
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
@@ -15,6 +16,7 @@ import com.example.project3pt.fragments.wedstrijdLijst.WedstrijdAdapter
 import com.example.project3pt.fragments.wedstrijdLijst.WedstrijdListener
 import com.example.project3pt.databinding.FragmentWedstrijdLijstBinding
 import com.example.project3pt.fragments.wedstrijdLijst.WedstrijdLijstViewModel
+import com.example.project3pt.fragments.wedstrijdLijst.WedstrijdLijstViewModelFactory
 
 
 class WedstrijdLijstFragment : Fragment() {
@@ -27,16 +29,26 @@ class WedstrijdLijstFragment : Fragment() {
             savedInstanceState: Bundle?
     ): View? {
 
-        vm = ViewModelProviders.of(this).get(WedstrijdLijstViewModel::class.java)
-        vm.getWedstrijden()
 
         binding = DataBindingUtil.inflate(
                 inflater, R.layout.fragment_wedstrijd_lijst, container, false
         )
 
+        vm = ViewModelProviders.of(this, WedstrijdLijstViewModelFactory(false)).get(WedstrijdLijstViewModel::class.java)
+        vm.getWedstrijden()
+
+        binding.refreshWedstrijdLijst.setOnRefreshListener {
+            vm.resetWedstrijden()
+            binding.loading.visibility = View.VISIBLE
+            vm.getWedstrijden()
+            binding.refreshWedstrijdLijst.isRefreshing = false
+        }
+
         binding.floatingActionButton.setOnClickListener(Navigation.createNavigateOnClickListener(
             R.id.action_wedstrijd_lijst_Fragment_to_maakWedstrijdFragment
         ))
+
+        binding.leeg.visibility = View.INVISIBLE
 
         val adapter =
             WedstrijdAdapter(
@@ -56,9 +68,8 @@ class WedstrijdLijstFragment : Fragment() {
         })
 
         vm.wedstrijden.observe(viewLifecycleOwner, Observer {
-            it?.let{
                 adapter.submitList(it)
-            }
+                binding.loading.visibility = View.INVISIBLE
         })
 
         return binding.root

@@ -1,6 +1,7 @@
 package com.example.project3pt
 
 import android.app.AlertDialog
+import android.graphics.BitmapFactory
 import com.example.project3pt.databinding.FragmentHomeBinding
 import android.os.Bundle
 import android.view.*
@@ -8,11 +9,13 @@ import android.widget.Button
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.databinding.DataBindingUtil
+import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import androidx.navigation.Navigation
 import androidx.navigation.fragment.findNavController
 import com.example.project3pt.R
 import com.example.project3pt.fragments.home.HomeViewModel
+import java.util.*
 
 class HomeFragment : Fragment() {
 
@@ -30,7 +33,14 @@ class HomeFragment : Fragment() {
 
         homeViewModel = ViewModelProviders.of(this).get(HomeViewModel::class.java)
 
-        binding.wedstrijd.setOnClickListener(Navigation.createNavigateOnClickListener(R.id.action_homeFragment_to_wedstrijdLijstFragment))
+        homeViewModel.foto.observe(viewLifecycleOwner, Observer {
+            if(it != null){
+                val imageBytes = Base64.getDecoder().decode(it.fotoData)
+                val image = BitmapFactory.decodeByteArray(imageBytes, 0, imageBytes.size)
+                binding.foto.setImageBitmap(image)
+            }
+        })
+
         return binding.root
     }
 

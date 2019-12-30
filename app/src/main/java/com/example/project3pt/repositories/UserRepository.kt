@@ -4,6 +4,7 @@ import android.content.Context
 import android.content.SharedPreferences
 import android.util.Log
 import com.example.project3pt.App
+import com.example.project3pt.models.Wedstrijd
 import com.example.project3pt.services.UserService
 import okhttp3.MediaType
 import okhttp3.RequestBody
@@ -69,6 +70,15 @@ class UserRepository(context: Context) :
         return userToken
     }
 
+    override suspend fun getMijnWedstrijden(): List<Wedstrijd>{
+        try{
+            return userService.getWedstrijden()
+        }catch (e: Exception){
+            Log.i("GetMijnWedstrijden()", e.message)
+        }
+        return listOf()
+    }
+
     /**
      * Check if the user is logged in by checking if the token is not null
      * @return true if usertoken != null
@@ -84,8 +94,7 @@ class UserRepository(context: Context) :
     /**
      * log de gebruiker uit
      */
-    override suspend fun logout() {
-        removeUserToken()
+    override fun logout() {
         saveUserNaam(null)
         saveUserToken(null)
     }

@@ -12,24 +12,16 @@
             android:id="@+id/action_loginFragment_to_registreerFragment"
             app:destination="@id/registreerFragment" />
         <action
-            android:id="@+id/action_loginFragment_to_homeFragment"
-            app:destination="@id/homeFragment" />
+            android:id="@+id/action_loginFragment_to_mijnWedstrijdLijstFragment"
+            app:destination="@id/mijnWedstrijdLijstFragment" />
     </fragment>
     <fragment
         android:id="@+id/registreerFragment"
         android:name="com.example.project3pt.RegistreerFragment"
         android:label="Registreren">
         <action
-            android:id="@+id/action_registreerFragment_to_homeFragment"
-            app:destination="@id/homeFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/homeFragment"
-        android:name="com.example.project3pt.HomeFragment"
-        android:label="Home">
-        <action
-            android:id="@+id/action_homeFragment_to_wedstrijdLijstFragment"
-            app:destination="@id/wedstrijd_lijst_Fragment" />
+            android:id="@+id/action_registreerFragment_to_mijnWedstrijdLijstFragment"
+            app:destination="@id/mijnWedstrijdLijstFragment" />
     </fragment>
     <fragment
         android:id="@+id/wedstrijd_lijst_Fragment"
@@ -57,4 +49,16 @@
         android:id="@+id/maakWedstrijdFragment"
         android:name="com.example.project3pt.fragments.maakWedstrijd.MaakWedstrijdFragment"
         android:label="MaakWedstrijdFragment" />
+    <fragment
+        android:id="@+id/fotoFragment"
+        android:name="com.example.project3pt.fragments.foto.FotoFragment"
+        android:label="FotoFragment" />
+    <fragment
+        android:id="@+id/mijnWedstrijdLijstFragment"
+        android:name="com.example.project3pt.MijnWedstrijdLijstFragment"
+        android:label="MijnWedstrijdLijstFragment" >
+        <action
+            android:id="@+id/action_mijnWedstrijdLijstFragment_to_wedstrijdFragment"
+            app:destination="@id/wedstrijdFragment" />
+    </fragment>
 </navigation>

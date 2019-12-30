@@ -1,10 +1,12 @@
 package com.example.project3pt
 
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.view.isVisible
 import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
@@ -25,14 +27,17 @@ class WedstrijdFragment : Fragment() {
          binding = DataBindingUtil.inflate(
             inflater, R.layout.fragment_wedstrijd, container, false
         )
-
+        binding.empty.isVisible = false
         val arguments = WedstrijdFragmentArgs.fromBundle(arguments!!)
-        val viewModel = WedstrijdViewModelFactory(arguments.wedstrijdKey)
+        val viewModelFactory = WedstrijdViewModelFactory(arguments.wedstrijdKey)
 
-        vm = ViewModelProviders.of(this, viewModel).get(WedstrijdViewModel::class.java)
+        vm = ViewModelProviders.of(this, viewModelFactory).get(WedstrijdViewModel::class.java)
         vm.wedstrijd.observe(this, Observer{
-            binding.wedstrijdSoort.text = it.soort
-            binding.wedstrijdLocatie.text = it.plaats
+            it?.let{
+                Log.i("wedstrijd", it.toString())
+                binding.wedstrijdSoort.text = it.soort
+                binding.wedstrijdLocatie.text = it.plaats
+            }
         })
 
 
@@ -41,7 +46,12 @@ class WedstrijdFragment : Fragment() {
 
         vm.deelnemers.observe(this, Observer {
             it?.let{
+                binding.empty.isVisible = false
                 adapter.data = it
+                if(it.isEmpty()){
+                    binding.empty.isVisible = true
+                }
+                binding.loading.visibility = View.INVISIBLE
             }
         })
 

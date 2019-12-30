@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="foto"
+            type="com.example.project3pt.models.Foto" />
+
+        <variable
+            name="clickListener"
+            type="com.example.project3pt.fragments.foto.FotoListener" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/foto_click"
+        android:onClick="@{() -> clickListener.onClick(foto)}"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp">
+
+
+        <ImageView
+            android:id="@+id/foto_item"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:scaleType="fitCenter"
+            tools:srcCompat="@tools:sample/avatars"
+            android:contentDescription="foto voor lijst" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

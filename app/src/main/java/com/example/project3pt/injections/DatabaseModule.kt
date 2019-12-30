@@ -1,10 +1,7 @@
 package com.example.project3pt.injections
 
 import android.content.Context
-import com.example.project3pt.repositories.IUserRepository
-import com.example.project3pt.repositories.UserRepository
-import com.example.project3pt.repositories.IWedstrijdRepository
-import com.example.project3pt.repositories.WedstrijdRepository
+import com.example.project3pt.repositories.*
 import dagger.Module
 import dagger.Provides
 import javax.inject.Singleton
@@ -22,5 +19,11 @@ class DatabaseModule(private val context: Context){
     @Singleton
     internal fun provideWedstrijdRepository() : IWedstrijdRepository {
         return WedstrijdRepository(context)
+    }
+
+    @Provides
+    @Singleton
+    internal fun provideFotoRepository() : IFotoRepository {
+        return FotoRepository(context)
     }
 }

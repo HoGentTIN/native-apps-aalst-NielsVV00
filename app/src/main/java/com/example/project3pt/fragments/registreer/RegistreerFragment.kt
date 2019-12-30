@@ -47,7 +47,7 @@ class RegistreerFragment : Fragment() /*,AdapterView.OnItemSelectedListener*/ {
                 if (result) {
                     Toast.makeText(context, "De registratie was succesvol!", Toast.LENGTH_LONG)
                         .show()
-                    findNavController().navigate(R.id.action_registreerFragment_to_homeFragment)
+                    findNavController().navigate(R.id.action_registreerFragment_to_mijnWedstrijdLijstFragment)
                 }
             })
 

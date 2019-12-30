@@ -1,6 +1,7 @@
 package com.example.project3pt.injections
 
 import android.content.Context
+import com.example.project3pt.services.FotoService
 import com.example.project3pt.services.UserService
 import com.example.project3pt.services.WedstrijdService
 import dagger.Module
@@ -25,6 +26,10 @@ class NetworkModule(private val context: Context) {
     @Provides
     internal fun provideWedstrijdService(retrofit: Retrofit) : WedstrijdService {
         return retrofit.create(WedstrijdService::class.java)
+    }
+    @Provides
+    internal fun provideFotoService(retrofit: Retrofit) : FotoService {
+        return retrofit.create(FotoService::class.java)
     }
 
     @Provides

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!-- Menu icoontjes voor bottomnavbar, id belangrijk voor de navigatie -->
+    <item
+        android:id="@+id/wedstrijd_lijst_Fragment"
+        android:icon="@drawable/ic_flag"
+        android:title="@string/wedstrijden">
+    </item>
+
+    <item
+        android:id="@+id/mijnWedstrijdLijstFragment"
+        android:icon="@drawable/ic_account"
+        android:title="@string/mijn_wedstrijden">
+    </item>
+
+    <item
+        android:id="@+id/fotoFragment"
+        android:icon="@drawable/ic_photo"
+        android:title="@string/fotos" />
+</menu>

@@ -1,19 +1,19 @@
 package com.example.project3pt.models
 
+import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 import com.example.project3pt.utils.getShortDateString
-import java.sql.Date
-import java.text.SimpleDateFormat
-import java.time.LocalDate
-import java.time.LocalDateTime
-import java.time.format.DateTimeFormatter
+import java.util.*
 
 @Entity(tableName = "wedstrijd_table")
 data class Wedstrijd(
+    @ColumnInfo(name = "datum")
     val datum: Date,
-    val soort : String,
-    val plaats : String,
+    @ColumnInfo(name = "soort")
+    val soort : String = "",
+    @ColumnInfo(name = "plaats")
+    val plaats : String = "",
     @PrimaryKey(autoGenerate = true)
     val id: Long = 1L
 ){
