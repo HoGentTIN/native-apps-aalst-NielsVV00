@@ -11,7 +11,7 @@ import com.example.project3pt.models.Wedstrijd
 /*
 deze klasse wordt gebruikt voor het dynamisch laden van alle wedstrijden in de wedstrijdenlijst
  */
-class WedstrijdAdapter(val clickListener: WedstrijdListener): ListAdapter<Wedstrijd, WedstrijdAdapter.WedstrijdViewHolder>(
+class WedstrijdAdapter(val clickListener: WedstrijdListener) : ListAdapter<Wedstrijd, WedstrijdAdapter.WedstrijdViewHolder>(
     WedstrijdDiffCallBack()
 ) {
 
@@ -49,7 +49,7 @@ class WedstrijdAdapter(val clickListener: WedstrijdListener): ListAdapter<Wedstr
     }
 }
 /* wordt gebruikt om te gaan kijken of er verschillen zijn opgetreden en gaat dan opnieuw laden bij verschillen */
-class WedstrijdDiffCallBack : DiffUtil.ItemCallback<Wedstrijd>(){
+class WedstrijdDiffCallBack : DiffUtil.ItemCallback<Wedstrijd>() {
     override fun areItemsTheSame(oldItem: Wedstrijd, newItem: Wedstrijd): Boolean {
         return oldItem.id == newItem.id
     }
@@ -57,10 +57,9 @@ class WedstrijdDiffCallBack : DiffUtil.ItemCallback<Wedstrijd>(){
     override fun areContentsTheSame(oldItem: Wedstrijd, newItem: Wedstrijd): Boolean {
         return oldItem == newItem
     }
-
 }
 
 /* implementeert de onclicklistener voor elk fietsobject */
-class WedstrijdListener(val clickListener: (wedstrijdId: Long) -> Unit){
+class WedstrijdListener(val clickListener: (wedstrijdId: Long) -> Unit) {
     fun onClick(wedstrijd: Wedstrijd) = clickListener(wedstrijd.id)
 }

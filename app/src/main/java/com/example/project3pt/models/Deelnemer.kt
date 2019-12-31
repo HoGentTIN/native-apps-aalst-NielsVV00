@@ -7,7 +7,7 @@ import androidx.room.PrimaryKey
 data class Deelnemer(
     @PrimaryKey(autoGenerate = true)
     val id: Long = 1L,
-    val voornaam : String,
-    val achternaam : String,
+    val voornaam: String,
+    val achternaam: String,
     val email: String
 )

@@ -11,13 +11,13 @@ data class Wedstrijd(
     @ColumnInfo(name = "datum")
     val datum: Date,
     @ColumnInfo(name = "soort")
-    val soort : String = "",
+    val soort: String = "",
     @ColumnInfo(name = "plaats")
-    val plaats : String = "",
+    val plaats: String = "",
     @PrimaryKey(autoGenerate = true)
     val id: Long = 1L
-){
-    fun getDateString(): String{
+) {
+    fun getDateString(): String {
         return getShortDateString(datum)
     }
 }

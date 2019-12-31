@@ -7,7 +7,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.project3pt.R
 import com.example.project3pt.models.Deelnemer
 
-class DeelnemerAdapter: RecyclerView.Adapter<TextItemViewHolder>(){
+class DeelnemerAdapter : RecyclerView.Adapter<TextItemViewHolder>() {
     var data = listOf<Deelnemer>()
         set(value) {
             field = value
@@ -26,7 +26,6 @@ class DeelnemerAdapter: RecyclerView.Adapter<TextItemViewHolder>(){
         val view = layoutInflater.inflate(R.layout.deelnemer_view_item, parent, false) as TextView
         return TextItemViewHolder(view)
     }
-
 }
 
-class TextItemViewHolder(val textView: TextView): RecyclerView.ViewHolder(textView)
+class TextItemViewHolder(val textView: TextView) : RecyclerView.ViewHolder(textView)

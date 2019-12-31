@@ -1,21 +1,18 @@
 package com.example.project3pt.fragments.foto
 
-import android.graphics.BitmapFactory
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.example.project3pt.databinding.FotoItemBinding
-import com.example.project3pt.databinding.WedstrijdLijstItemBinding
 import com.example.project3pt.models.Foto
-import com.example.project3pt.models.Wedstrijd
 import java.util.*
 
 /*
 deze klasse wordt gebruikt voor het dynamisch laden van alle wedstrijden in de wedstrijdenlijst
  */
-class FotoAdapter(val clickListener: FotoListener): ListAdapter<Foto, FotoAdapter.FotoViewHolder>(
+class FotoAdapter(val clickListener: FotoListener) : ListAdapter<Foto, FotoAdapter.FotoViewHolder>(
     FotoDiffCallBack()
 ) {
 
@@ -54,7 +51,7 @@ class FotoAdapter(val clickListener: FotoListener): ListAdapter<Foto, FotoAdapte
     }
 }
 /* wordt gebruikt om te gaan kijken of er verschillen zijn opgetreden en gaat dan opnieuw laden bij verschillen */
-class FotoDiffCallBack : DiffUtil.ItemCallback<Foto>(){
+class FotoDiffCallBack : DiffUtil.ItemCallback<Foto>() {
     override fun areItemsTheSame(oldItem: Foto, newItem: Foto): Boolean {
         return oldItem.id == newItem.id
     }
@@ -62,10 +59,9 @@ class FotoDiffCallBack : DiffUtil.ItemCallback<Foto>(){
     override fun areContentsTheSame(oldItem: Foto, newItem: Foto): Boolean {
         return oldItem.fotoData == newItem.fotoData
     }
-
 }
 
 /* implementeert de onclicklistener voor elk fietsobject */
-class FotoListener(val clickListener: (foto: Foto) -> Unit){
+class FotoListener(val clickListener: (foto: Foto) -> Unit) {
     fun onClick(foto: Foto) = clickListener(foto)
 }

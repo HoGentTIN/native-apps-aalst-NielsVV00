@@ -1,38 +1,21 @@
 package com.example.project3pt.repositories
 
-import android.content.Context
 import android.content.SharedPreferences
 import android.util.Log
-import com.example.project3pt.App
 import com.example.project3pt.models.Wedstrijd
 import com.example.project3pt.services.UserService
+import java.lang.Exception
 import okhttp3.MediaType
 import okhttp3.RequestBody
 import org.json.JSONObject
-import java.lang.Exception
 
-import javax.inject.Inject
+class UserRepository(
+    private val sharedPreferences: SharedPreferences,
+    private val userService: UserService
+) : IUserRepository {
 
-
-class UserRepository(context: Context) :
-    IUserRepository {
-
-    private var userToken: String?
-    private var userNaam: String?
-    private var sharedPreferences : SharedPreferences
-
-    @Inject
-    lateinit var userService: UserService
-
-    init{
-        // Dagger injection
-        App.appComponent.inject(this)
-        //initialize sharedPReferences
-        sharedPreferences = context.getSharedPreferences("Preferences", 0)
-        //Initialize user token
-        this.userToken = (sharedPreferences.getString("userToken", null))
-        this.userNaam = (sharedPreferences.getString("userNaam", null))
-    }
+    private var userToken: String? = (sharedPreferences.getString("userToken", null))
+    private var userNaam: String? = (sharedPreferences.getString("userNaam", null))
 
     override fun saveUserNaam(userNaam: String?) {
         this.userNaam = userNaam
@@ -70,10 +53,10 @@ class UserRepository(context: Context) :
         return userToken
     }
 
-    override suspend fun getMijnWedstrijden(): List<Wedstrijd>{
-        try{
+    override suspend fun getMijnWedstrijden(): List<Wedstrijd> {
+        try {
             return userService.getWedstrijden()
-        }catch (e: Exception){
+        } catch (e: Exception) {
             Log.i("GetMijnWedstrijden()", e.message)
         }
         return listOf()
@@ -84,7 +67,7 @@ class UserRepository(context: Context) :
      * @return true if usertoken != null
      */
     override suspend fun isUserLoggedIn(): Boolean {
-        if(getUserToken() != null){
+        if (getUserToken() != null) {
             Log.i("token logged in", getUserToken())
             return true
         }
@@ -108,16 +91,15 @@ class UserRepository(context: Context) :
         json.put("password", password)
         var thisLogin: RequestBody =
             RequestBody.create(MediaType.parse("application/json"), json.toString())
-        try{
+        try {
             var response = userService.login(thisLogin)
             loadUserData(response.voornaam + " " + response.achternaam, response.token)
             return true
-        }catch (e: Exception){
+        } catch (e: Exception) {
             Log.e("ErrorLogin", e.message)
             return false
         }
     }
-
 
     // Register User
     override suspend fun register(
@@ -136,17 +118,17 @@ class UserRepository(context: Context) :
 
         var thisRegister: RequestBody = RequestBody.create(MediaType.parse("application/json"), json.toString())
         Log.i("bodyReg", thisRegister.toString())
-        try{
+        try {
             var response = userService.register(thisRegister)
             loadUserData(response.voornaam + " " + response.achternaam, response.token)
             return true
-        }catch (e: Exception){
+        } catch (e: Exception) {
             Log.e("ErrorRegister", e.message)
             return false
         }
     }
 
-    suspend private fun loadUserData(naam: String, token: String){
+    private suspend fun loadUserData(naam: String, token: String) {
         saveUserNaam(naam)
         saveUserToken(token)
     }

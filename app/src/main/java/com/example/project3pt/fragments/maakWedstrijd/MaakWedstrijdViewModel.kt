@@ -5,25 +5,16 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.project3pt.App
 import com.example.project3pt.models.Wedstrijd
-import com.example.project3pt.repositories.IWedstrijdRepository
+import com.example.project3pt.repositories.WedstrijdRepository
 import com.example.project3pt.utils.getShortDateString
-import kotlinx.coroutines.launch
 import java.sql.Date
-import java.text.SimpleDateFormat
-import java.time.LocalDate
 import java.util.*
-import javax.inject.Inject
+import kotlinx.coroutines.launch
 
-class MaakWedstrijdViewModel : ViewModel(){
-
-    @Inject
-    lateinit var wedstrijdRepository: IWedstrijdRepository
-
-    init{
-        App.appComponent.inject(this)
-    }
+class MaakWedstrijdViewModel(
+    private val wedstrijdRepository: WedstrijdRepository
+) : ViewModel() {
 
     private val _postSucces = MutableLiveData<Boolean>()
     val postSucces: LiveData<Boolean>
@@ -40,11 +31,9 @@ class MaakWedstrijdViewModel : ViewModel(){
         return getShortDateString(datum)
     }
 
-    fun postWedstrijd(soort: String, plaats: String){
+    fun postWedstrijd(soort: String, plaats: String) {
         viewModelScope.launch {
             _postSucces.value = wedstrijdRepository.postWedstrijd(Wedstrijd(datum, soort, plaats))
         }
     }
-
-
 }

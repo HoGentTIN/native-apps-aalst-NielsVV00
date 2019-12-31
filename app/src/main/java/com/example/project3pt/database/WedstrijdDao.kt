@@ -1,6 +1,5 @@
 package com.example.project3pt.database
 
-
 import androidx.room.*
 import com.example.project3pt.models.Wedstrijd
 
@@ -20,4 +19,3 @@ interface WedstrijdDao {
     @Insert
     suspend fun insert(wedstrijd: Wedstrijd)
 }
-

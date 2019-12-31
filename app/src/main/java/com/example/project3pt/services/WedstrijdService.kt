@@ -3,7 +3,6 @@ package com.example.project3pt.services
 import com.example.project3pt.models.Deelnemer
 import com.example.project3pt.models.Wedstrijd
 import okhttp3.RequestBody
-import okhttp3.Response
 import okhttp3.ResponseBody
 import retrofit2.http.Body
 import retrofit2.http.GET
@@ -19,7 +18,7 @@ interface WedstrijdService {
 
     @POST("wedstrijd")
     suspend fun postWedstrijd(
-        @Body request : RequestBody
+        @Body request: RequestBody
     ): ResponseBody
 
     @GET("wedstrijd/{id}/deelnemers")
@@ -27,5 +26,4 @@ interface WedstrijdService {
 
     @POST("wedstrijd/{id}/neemdeel")
     suspend fun neemDeel(@Path("id") id: Long): ResponseBody
-
 }

@@ -3,26 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/navigation"
-    app:startDestination="@id/loginFragment">
-    <fragment
-        android:id="@+id/loginFragment"
-        android:name="com.example.project3pt.LoginFragment"
-        android:label="Login">
-        <action
-            android:id="@+id/action_loginFragment_to_registreerFragment"
-            app:destination="@id/registreerFragment" />
-        <action
-            android:id="@+id/action_loginFragment_to_mijnWedstrijdLijstFragment"
-            app:destination="@id/mijnWedstrijdLijstFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/registreerFragment"
-        android:name="com.example.project3pt.RegistreerFragment"
-        android:label="Registreren">
-        <action
-            android:id="@+id/action_registreerFragment_to_mijnWedstrijdLijstFragment"
-            app:destination="@id/mijnWedstrijdLijstFragment" />
-    </fragment>
+    app:startDestination="@id/mijnWedstrijdLijstFragment">
     <fragment
         android:id="@+id/wedstrijd_lijst_Fragment"
         android:name="com.example.project3pt.WedstrijdLijstFragment"
@@ -56,7 +37,7 @@
     <fragment
         android:id="@+id/mijnWedstrijdLijstFragment"
         android:name="com.example.project3pt.MijnWedstrijdLijstFragment"
-        android:label="MijnWedstrijdLijstFragment" >
+        android:label="MijnWedstrijdLijstFragment">
         <action
             android:id="@+id/action_mijnWedstrijdLijstFragment_to_wedstrijdFragment"
             app:destination="@id/wedstrijdFragment" />

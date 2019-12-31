@@ -8,6 +8,8 @@ apply plugin: 'kotlin-kapt'
 
 apply plugin: 'androidx.navigation.safeargs'
 
+apply plugin: 'org.jetbrains.dokka'
+
 android {
     compileOptions {
         sourceCompatibility = 1.8
@@ -34,8 +36,17 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+    dokka{
+        outputFormat = 'html'
+        outputDirectory = "kdoc"
+    }
+    testOptions {
+        unitTests.includeAndroidResources = true
+        unitTests.returnDefaultValues = true
+    }
+
     dataBinding {
-        enabled = true;
+        enabled = true
     }
 }
 
@@ -58,6 +69,7 @@ dependencies {
     implementation 'com.wdullaer:materialdatetimepicker:4.2.3'
     implementation 'com.android.support:appcompat-v7:29.0.1'
     implementation 'com.android.support:design:29.0.1'
+    implementation "com.jakewharton.retrofit:retrofit2-kotlin-coroutines-adapter:$version_retrofit_coroutines_adapter"
 
     implementation "androidx.room:room-runtime:$version_room"
     kapt "androidx.room:room-compiler:$version_room"
@@ -87,4 +99,29 @@ dependencies {
     /* MOSHI */
     implementation "com.squareup.moshi:moshi:1.8.0"
     implementation "com.squareup.moshi:moshi-kotlin:1.8.0"
+    implementation "com.squareup.retrofit2:converter-moshi:$retrofit"
+
+    /* TESTING */
+    // Required -- JUnit 4 framework
+    testImplementation 'junit:junit:4.12'
+    // Optional -- Mockito framework
+    testImplementation 'org.mockito:mockito-core:2.19.0'
+    /* Espresso */
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    androidTestImplementation 'androidx.test:rules:1.3.0-alpha03'
+
+    // Testing
+    testImplementation 'org.mockito:mockito-inline:2.13.0'
+
+    androidTestImplementation 'androidx.test:runner:1.2.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+
+    testImplementation 'org.jetbrains.kotlinx:kotlinx-coroutines-test:1.3.2'
+    testImplementation "android.arch.core:core-testing:1.1.1"
+
+    //Koin
+    implementation "org.koin:koin-core:$koin_version"
+    implementation "org.koin:koin-android:$koin_version"
+    implementation "org.koin:koin-android-viewmodel:$koin_version"
+    androidTestImplementation 'androidx.test:rules:1.2.0-beta01'
 }

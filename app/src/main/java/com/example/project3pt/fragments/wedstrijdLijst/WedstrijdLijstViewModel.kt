@@ -5,17 +5,15 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.project3pt.App
 import com.example.project3pt.models.Wedstrijd
-import com.example.project3pt.repositories.IUserRepository
-import com.example.project3pt.repositories.IWedstrijdRepository
+import com.example.project3pt.repositories.WedstrijdRepository
 import kotlinx.coroutines.launch
-import javax.inject.Inject
 
-class WedstrijdLijstViewModel(private val isMijnWedstrijden: Boolean): ViewModel() {
+class WedstrijdLijstViewModel(
+    private val wedstrijdRepository: WedstrijdRepository
+) : ViewModel() {
 
-    @Inject
-    lateinit var wedstrijdRepository: IWedstrijdRepository
+    private var isMijnWedstrijden: Boolean = false
 
     private val _wedstrijden = MutableLiveData<List<Wedstrijd>>()
     val wedstrijden: LiveData<List<Wedstrijd>>
@@ -25,23 +23,22 @@ class WedstrijdLijstViewModel(private val isMijnWedstrijden: Boolean): ViewModel
     val hasWedstrijden: LiveData<Boolean>
         get() = _hasWedstrijden
 
-    init {
-        App.appComponent.inject(this)
-
+    fun isMijnWedstrijden() {
+        isMijnWedstrijden = true
     }
 
-    fun getWedstrijden(){
+    fun getWedstrijden() {
         viewModelScope.launch {
-            if(isMijnWedstrijden){
+            if (isMijnWedstrijden) {
                 _wedstrijden.value = wedstrijdRepository.getMijnWedstrijden()
                 _hasWedstrijden.value = hasWedstrijden()
-            }else{
+            } else {
                 _wedstrijden.value = wedstrijdRepository.refreshWedstrijden()
             }
         }
     }
 
-    fun resetWedstrijden(){
+    fun resetWedstrijden() {
         _wedstrijden.value = listOf()
     }
 
@@ -55,7 +52,7 @@ class WedstrijdLijstViewModel(private val isMijnWedstrijden: Boolean): ViewModel
         _navigateToWedstrijd.value = wedstrijdId
     }
 
-    fun onWedstrijdNavigated(){
+    fun onWedstrijdNavigated() {
         _navigateToWedstrijd.value = null
     }
 

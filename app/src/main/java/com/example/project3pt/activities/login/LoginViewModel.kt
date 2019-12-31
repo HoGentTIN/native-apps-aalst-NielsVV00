@@ -1,35 +1,31 @@
-package com.example.project3pt.fragments.login
+package com.example.project3pt.activities.login
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.project3pt.App
-import com.example.project3pt.repositories.IUserRepository
+import com.example.project3pt.repositories.UserRepository
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
-import javax.inject.Inject
 
-class LoginViewModel: ViewModel() {
-
-    @Inject
-    lateinit var userRepository: IUserRepository
+class LoginViewModel(
+    private val userRepository: UserRepository
+) : ViewModel() {
 
     private val _loginSucces = MutableLiveData<Boolean>()
     val loginSucces: LiveData<Boolean>
         get() = _loginSucces
 
     // Dagger injection
-    init {
-        App.appComponent.inject(this)
+    fun init() {
         _loginSucces.value = false
     }
 
     fun login(email: String, password: String) {
         viewModelScope.launch {
-            withContext(Dispatchers.Main){
-                if(userRepository.login(email, password)){
+            withContext(Dispatchers.Main) {
+                if (userRepository.login(email, password)) {
                     _loginSucces.value = true
                 }
             }

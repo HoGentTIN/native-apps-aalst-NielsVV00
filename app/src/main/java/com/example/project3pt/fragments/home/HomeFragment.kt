@@ -1,29 +1,31 @@
 package com.example.project3pt
 
 import android.app.AlertDialog
+import android.content.Intent
 import android.graphics.BitmapFactory
-import com.example.project3pt.databinding.FragmentHomeBinding
 import android.os.Bundle
 import android.view.*
 import android.widget.Button
 import android.widget.TextView
-import androidx.fragment.app.Fragment
 import androidx.databinding.DataBindingUtil
+import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
-import androidx.navigation.Navigation
 import androidx.navigation.fragment.findNavController
-import com.example.project3pt.R
+import com.example.project3pt.activities.login.LoginActivity
+import com.example.project3pt.databinding.FragmentHomeBinding
 import com.example.project3pt.fragments.home.HomeViewModel
+import org.koin.android.viewmodel.ext.android.viewModel
 import java.util.*
 
 class HomeFragment : Fragment() {
 
-    lateinit var homeViewModel: HomeViewModel
+    private val homeViewModel: HomeViewModel by viewModel()
 
     override fun onCreateView(
-            inflater: LayoutInflater, container: ViewGroup?,
-            savedInstanceState: Bundle?
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?
     ): View? {
         val binding: FragmentHomeBinding = DataBindingUtil.inflate(
                 inflater, R.layout.fragment_home, container, false
@@ -31,10 +33,10 @@ class HomeFragment : Fragment() {
 
         setHasOptionsMenu(true)
 
-        homeViewModel = ViewModelProviders.of(this).get(HomeViewModel::class.java)
+        homeViewModel.init()
 
         homeViewModel.foto.observe(viewLifecycleOwner, Observer {
-            if(it != null){
+            if (it != null) {
                 val imageBytes = Base64.getDecoder().decode(it.fotoData)
                 val image = BitmapFactory.decodeByteArray(imageBytes, 0, imageBytes.size)
                 binding.foto.setImageBitmap(image)
@@ -65,12 +67,19 @@ class HomeFragment : Fragment() {
         val alert = dialogBuilder.create()
         alert.show()
         alert.findViewById<TextView>(R.id.dialog_info).text = "Weet u zeker dat u wilt uitloggen?"
-        alert.findViewById<Button>(R.id.dialog_ok).setOnClickListener{
+        alert.findViewById<Button>(R.id.dialog_ok).setOnClickListener {
             homeViewModel.logout()
-            findNavController().navigate(R.id.loginFragment)
+            // Intent om te kunnen navigeren van activities
+            val intent = Intent(this.activity, LoginActivity::class.java)
+            startActivity(intent)
+            this.activity!!.finish()
+            this.activity!!.overridePendingTransition(
+                R.anim.slide_in_left,
+                R.anim.slide_out_right
+            )
             alert.cancel()
         }
-        alert.findViewById<Button>(R.id.dialog_cancel).setOnClickListener{
+        alert.findViewById<Button>(R.id.dialog_cancel).setOnClickListener {
             alert.cancel()
         }
     }

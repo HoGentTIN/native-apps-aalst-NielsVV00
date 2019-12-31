@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutLogin"
+        android:clickable="true"
+        android:focusableInTouchMode="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:fitsSystemWindows="true">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="56dp"
+                android:paddingLeft="24dp"
+                android:paddingRight="24dp">
+
+                <ImageView android:src="@drawable/logo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="128dp"
+                    android:layout_marginBottom="24dp"
+                    android:layout_gravity="center_horizontal" />
+
+                <!--  Email Label -->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_marginBottom="8dp"
+                    android:hint="@string/str_hint_email">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/emailTextField"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableStart="@drawable/icon_user"
+                        android:drawablePadding="10dp"
+                        android:singleLine="true" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- Wachtwoord -->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:hint="@string/str_hint_password">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/passwordTextField"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableStart="@drawable/icon_lock"
+                        android:drawablePadding="10dp"
+                        android:inputType="textPassword"
+                        android:singleLine="true" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- Aanmelden -->
+                <Button
+                    android:id="@+id/btn_aanmelden"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:layout_marginTop="24dp"
+                    android:text="@string/aanmelden" />
+
+                <!-- Wachtwoord vergeten -->
+                <Button
+                    android:id="@+id/btn_registreren"
+                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/noggeenaccount"
+                    android:textColor="@android:color/darker_gray" />
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+        <!-- Progress bar, voor als je aanmeldt dat je ziet dat de applicatie bezig is -->
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/llProgressBar"
+            android:visibility="gone"
+            android:layout_gravity="center"
+            layout="@layout/layout_progress_bar_with_text"/>
+
+
+    </RelativeLayout>
+
+
+
+</layout>

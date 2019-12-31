@@ -2,8 +2,8 @@ package com.example.project3pt
 
 import android.annotation.SuppressLint
 import android.app.AlertDialog
+import android.content.Intent
 import android.os.Bundle
-import android.os.CountDownTimer
 import android.util.Log
 import android.view.*
 import android.widget.Button
@@ -13,30 +13,30 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import androidx.navigation.fragment.findNavController
-import com.example.project3pt.fragments.wedstrijdLijst.WedstrijdAdapter
-import com.example.project3pt.fragments.wedstrijdLijst.WedstrijdListener
+import com.example.project3pt.activities.login.LoginActivity
 import com.example.project3pt.databinding.FragmentWedstrijdLijstBinding
+import com.example.project3pt.fragments.wedstrijdLijst.WedstrijdAdapter
 import com.example.project3pt.fragments.wedstrijdLijst.WedstrijdLijstViewModel
-import com.example.project3pt.fragments.wedstrijdLijst.WedstrijdLijstViewModelFactory
-
+import com.example.project3pt.fragments.wedstrijdLijst.WedstrijdListener
+import org.koin.android.viewmodel.ext.android.viewModel
 
 class MijnWedstrijdLijstFragment : Fragment() {
 
     private lateinit var binding: FragmentWedstrijdLijstBinding
-    private lateinit var vm: WedstrijdLijstViewModel
+    private val vm: WedstrijdLijstViewModel by viewModel()
 
     @SuppressLint("RestrictedApi")
     override fun onCreateView(
-            inflater: LayoutInflater, container: ViewGroup?,
-            savedInstanceState: Bundle?
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?
     ): View? {
-
 
         binding = DataBindingUtil.inflate(
                 inflater, R.layout.fragment_wedstrijd_lijst, container, false
         )
 
-        vm = ViewModelProviders.of(this, WedstrijdLijstViewModelFactory(true)).get(WedstrijdLijstViewModel::class.java)
+        vm.isMijnWedstrijden()
         vm.getWedstrijden()
 
         binding.refreshWedstrijdLijst.setOnRefreshListener {
@@ -70,9 +70,9 @@ class MijnWedstrijdLijstFragment : Fragment() {
 
         vm.hasWedstrijden.observe(viewLifecycleOwner, Observer {
             Log.i("tf?", it.toString())
-            if(it){
+            if (it) {
                 binding.leeg.visibility = View.INVISIBLE
-            }else{
+            } else {
                 binding.leeg.visibility = View.VISIBLE
             }
         })
@@ -107,12 +107,19 @@ class MijnWedstrijdLijstFragment : Fragment() {
         val alert = dialogBuilder.create()
         alert.show()
         alert.findViewById<TextView>(R.id.dialog_info).text = "Weet u zeker dat u wilt uitloggen?"
-        alert.findViewById<Button>(R.id.dialog_ok).setOnClickListener{
+        alert.findViewById<Button>(R.id.dialog_ok).setOnClickListener {
             vm.logout()
-            findNavController().navigate(R.id.loginFragment)
+            // Intent om te kunnen navigeren van activities
+            val intent = Intent(this.activity, LoginActivity::class.java)
+            startActivity(intent)
+            this.activity!!.finish()
+            this.activity!!.overridePendingTransition(
+                R.anim.slide_in_left,
+                R.anim.slide_out_right
+            )
             alert.cancel()
         }
-        alert.findViewById<Button>(R.id.dialog_cancel).setOnClickListener{
+        alert.findViewById<Button>(R.id.dialog_cancel).setOnClickListener {
             alert.cancel()
         }
     }

@@ -17,18 +17,18 @@ interface IUserRepository {
     /**
      * @return the user token or null
      */
-    fun getUserToken() : String?
+    fun getUserToken(): String?
 
     /**
      * @return true if the user is logged in
      */
-    suspend fun isUserLoggedIn() : Boolean
+    suspend fun isUserLoggedIn(): Boolean
 
     fun saveUserNaam(userNaam: String?)
 
     fun removeUserNaam()
 
-    fun getUserNaam() : String
+    fun getUserNaam(): String
 
     suspend fun getMijnWedstrijden(): List<Wedstrijd>
 
@@ -37,8 +37,6 @@ interface IUserRepository {
     // LOGIN
     suspend fun login(email: String, password: String): Boolean
 
-
     // REGISTER
     suspend fun register(email: String, password: String, firstName: String, lastName: String): Boolean
-
 }

@@ -1,4 +1,4 @@
-package com.example.project3pt.injections
+package com.example.project3pt.interceptor
 
 import android.content.Context
 import android.util.Log
