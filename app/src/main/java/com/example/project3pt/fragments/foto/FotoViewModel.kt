@@ -30,5 +30,8 @@ class FotoViewModel(
         val list = fotos.value?.toMutableList()
         list?.add(foto)
         _fotos.value = list
+        viewModelScope.launch {
+            fotoRepository.post(foto)
+        }
     }
 }

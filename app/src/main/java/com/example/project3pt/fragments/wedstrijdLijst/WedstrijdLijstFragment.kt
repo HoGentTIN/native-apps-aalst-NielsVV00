@@ -30,6 +30,8 @@ class WedstrijdLijstFragment : Fragment() {
                 inflater, R.layout.fragment_wedstrijd_lijst, container, false
         )
 
+        activity?.title = "Wedstrijden"
+
         binding.leeg.visibility = View.INVISIBLE
         vm.getWedstrijden()
 

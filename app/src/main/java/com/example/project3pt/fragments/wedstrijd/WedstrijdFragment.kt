@@ -9,6 +9,7 @@ import androidx.core.view.isVisible
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
+import androidx.navigation.fragment.findNavController
 import com.example.project3pt.databinding.FragmentWedstrijdBinding
 import com.example.project3pt.fragments.wedstrijd.DeelnemerAdapter
 import com.example.project3pt.fragments.wedstrijd.WedstrijdViewModel
@@ -27,6 +28,8 @@ class WedstrijdFragment : Fragment() {
          binding = DataBindingUtil.inflate(
             inflater, R.layout.fragment_wedstrijd, container, false
         )
+        activity?.title = "Wedstrijd"
+
         binding.empty.isVisible = false
         val arguments = WedstrijdFragmentArgs.fromBundle(arguments!!)
         // val viewModelFactory = WedstrijdViewModelFactory(arguments.wedstrijdKey)
@@ -52,6 +55,16 @@ class WedstrijdFragment : Fragment() {
                     binding.empty.isVisible = true
                 }
                 binding.loading.visibility = View.INVISIBLE
+            }
+        })
+
+        vm.deelgenomen.observe(viewLifecycleOwner, Observer{
+            Log.i("boolie", it.toString())
+            if(it){
+                binding.neemDeel.text = "Uitschrijven"
+            }
+            else{
+                binding.neemDeel.text = "Deelnemen"
             }
         })
 

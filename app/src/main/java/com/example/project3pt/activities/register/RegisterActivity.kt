@@ -10,7 +10,6 @@ import android.widget.Toast
 
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
-import androidx.lifecycle.ViewModelProviders
 import com.example.project3pt.activities.MainActivity
 import com.example.project3pt.R
 import com.example.project3pt.activities.login.LoginActivity
@@ -28,6 +27,8 @@ class RegisterActivity : AppCompatActivity() {
 
         //Binding
         binding = DataBindingUtil.setContentView<ActivityRegisterBinding>(this, R.layout.activity_register)
+
+        title = "Registreer"
 
         // Observer voor te navigeren naar home
         registerViewModel.registerSuccess.observe(this, androidx.lifecycle.Observer { result ->
@@ -74,7 +75,7 @@ class RegisterActivity : AppCompatActivity() {
                         onRegisterFailed()
                     }
                 })
-            }, 3000
+            }, 1000
         )
     }
 
@@ -113,14 +114,9 @@ class RegisterActivity : AppCompatActivity() {
 
         val emailText = binding.textEmail.text.toString()
         val passwordText = binding.textPassword.text.toString()
-        val passwordConfirmText = binding.textPasswordConfirm.text.toString()
         val firstNameText = binding.textFirstname.text.toString()
         val lastNameText = binding.textLastname.text.toString()
 
-        if (passwordText != passwordConfirmText) {
-            binding.textPasswordConfirm.setError("de wachtwoorden komen niet overeen")
-            valid = true
-        }
         if (passwordText.length < 6) {
             binding.textPassword.setError("Het wachtwoord is te kort")
             valid = true
@@ -129,7 +125,7 @@ class RegisterActivity : AppCompatActivity() {
             binding.textEmail.setError("Gelieve een geldig e-mailadres te gebruiken")
             valid = true
         }
-        if (emailText.isBlank() || passwordText.isBlank() || firstNameText.isBlank() || lastNameText.isBlank() || passwordConfirmText.isBlank()) {
+        if (emailText.isBlank() || passwordText.isBlank() || firstNameText.isBlank() || lastNameText.isBlank()) {
             binding.textEmail.setError("Gelieve alle velden in te vullen")
             valid = true
         }

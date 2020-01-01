@@ -29,15 +29,15 @@
     <fragment
         android:id="@+id/maakWedstrijdFragment"
         android:name="com.example.project3pt.fragments.maakWedstrijd.MaakWedstrijdFragment"
-        android:label="MaakWedstrijdFragment" />
+        android:label="Voeg een wedstrijd toe" />
     <fragment
         android:id="@+id/fotoFragment"
         android:name="com.example.project3pt.fragments.foto.FotoFragment"
-        android:label="FotoFragment" />
+        android:label="De foto's" />
     <fragment
         android:id="@+id/mijnWedstrijdLijstFragment"
         android:name="com.example.project3pt.MijnWedstrijdLijstFragment"
-        android:label="MijnWedstrijdLijstFragment">
+        android:label="Mijn wedstrijden">
         <action
             android:id="@+id/action_mijnWedstrijdLijstFragment_to_wedstrijdFragment"
             app:destination="@id/wedstrijdFragment" />

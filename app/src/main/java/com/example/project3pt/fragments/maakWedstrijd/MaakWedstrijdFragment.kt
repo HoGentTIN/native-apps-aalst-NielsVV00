@@ -28,21 +28,26 @@ class MaakWedstrijdFragment : Fragment() {
     ): View? {
         binding = DataBindingUtil.inflate(inflater, R.layout.fragment_maak_wedstrijd, container, false)
 
+        activity?.title = "Voeg een wedstrijd toe"
+
         val c = Calendar.getInstance()
         val year = c.get(Calendar.YEAR)
         val month = c.get(Calendar.MONTH)
         val day = c.get(Calendar.DAY_OF_MONTH)
 
-        binding.kiesDatum.setOnClickListener {
+        binding.kiesDatum.setOnFocusChangeListener { view, b ->
+            if(view.hasFocus()){
             val dpd = DatePickerDialog(requireContext(), DatePickerDialog.OnDateSetListener { view, jaar, maand, dag ->
-                binding.dateField.text = vm.saveDate(jaar, maand, dag)
+                binding.kiesDatum.setText(vm.saveDate(jaar, maand, dag))
             }, year, month, day)
             dpd.show()
+                }
+            binding.kiesDatum.clearFocus()
         }
 
         binding.voegWedToe.setOnClickListener {
-            val soort = binding.editSoort.text.toString()
-            val locatie = binding.editLocatie.text.toString()
+            val soort = binding.kiesSoort.text.toString()
+            val locatie = binding.kiesLocatie.text.toString()
             if (soort.isBlank() || locatie.isBlank()) {
                 Toast.makeText(requireContext(), "Gelieve alle velden in te vullen.", Toast.LENGTH_LONG).show()
             } else if (vm.datum.before(Calendar.getInstance().time)) {

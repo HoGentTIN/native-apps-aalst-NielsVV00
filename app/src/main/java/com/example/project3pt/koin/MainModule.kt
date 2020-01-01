@@ -98,7 +98,7 @@ fun provideRetrofit(moshi: Moshi, context: Context): Retrofit {
         .client(client)
         .addConverterFactory(GsonConverterFactory.create(gson))
         .addCallAdapterFactory(RxJava2CallAdapterFactory.createWithScheduler(Schedulers.io()))
-        .baseUrl("https://wedstrijdapi.azurewebsites.net/api/")
+        .baseUrl("https://wedstrijdapibackup.azurewebsites.net/api/")  //.baseUrl("https://wedstrijdapi.azurewebsites.net/api/")
         .build()
 }
 

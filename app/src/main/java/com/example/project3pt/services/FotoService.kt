@@ -1,6 +1,7 @@
 package com.example.project3pt.services
 
 import com.example.project3pt.models.Foto
+import okhttp3.RequestBody
 import retrofit2.http.*
 
 interface FotoService {
@@ -10,6 +11,6 @@ interface FotoService {
     @GET("foto")
     suspend fun getAll(): List<Foto>
 
-    @POST("foto?")
-    suspend fun post(@Query("data") data: String): Foto
+    @POST("foto")
+    suspend fun post(@Body foto: Foto): Foto
 }

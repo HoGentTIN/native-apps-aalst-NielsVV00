@@ -48,6 +48,9 @@ class FotoFragment : Fragment() {
         val binding: FragmentFotoBinding = DataBindingUtil.inflate(
         inflater, R.layout.fragment_foto, container, false
         )
+
+        activity?.title = "Foto's"
+
         binding.geenfotos.visibility = View.INVISIBLE
         vm.getFotos()
 

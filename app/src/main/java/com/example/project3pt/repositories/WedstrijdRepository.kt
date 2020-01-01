@@ -21,27 +21,28 @@ class WedstrijdRepository(
     private val wedstrijdService: WedstrijdService
 ) : IWedstrijdRepository {
 
-    override suspend fun refreshWedstrijden(): List<Wedstrijd> {
-        Log.i("net", isNetworkAvailable().toString())
-        if (isNetworkAvailable()) {
-            wedstrijdDao.nukeTable()
-            getWedstrijdenFromApi().forEach {
-                wedstrijdDao.insert(it)
+    override suspend fun getAll(): List<Wedstrijd> {
+        if(isNetworkAvailable()){
+            try {
+                val wedstrijden = wedstrijdService.getWedstrijden()
+                Log.i("wedstrijden", wedstrijden.toString())
+                saveWedstrijdenToDb(wedstrijden)
+                return wedstrijden
+            } catch (e: Exception) {
+                Log.e("loadWedstrijden", "Failed to load: " + e.message)
             }
         }
-        return wedstrijdDao.getAll()
-    }
-
-    override suspend fun getWedstrijdenFromApi(): List<Wedstrijd> {
-        lateinit var wedstrijden: List<Wedstrijd>
-        try {
-            wedstrijden = wedstrijdService.getWedstrijden()
-            Log.i("wedstrijden", wedstrijden.toString())
-            return wedstrijden
-        } catch (e: Exception) {
-            Log.e("loadWedstrijden", "Failed to load: " + e.message)
+        else if(wedstrijdDao.getAll().isNotEmpty()){
+            return wedstrijdDao.getAll()
         }
         return ArrayList()
+    }
+
+    private suspend fun saveWedstrijdenToDb(wedstrijden: List<Wedstrijd>) {
+        wedstrijdDao.nukeTable()
+        wedstrijden.forEach {
+            wedstrijdDao.insert(it)
+        }
     }
 
     override suspend fun getWedstrijd(id: Long): Wedstrijd {
@@ -68,6 +69,7 @@ class WedstrijdRepository(
 
     override fun getMijnWedstrijdenFromShared(): List<Wedstrijd>? {
         val mijnWedstrijdenString = sharedPreferences.getString("mijnWedstrijden", null)
+        Log.i("mijnWedstrijden", mijnWedstrijdenString)
         if(mijnWedstrijdenString.isNullOrEmpty()){
             return null
         }else{
@@ -90,13 +92,23 @@ class WedstrijdRepository(
         saveMijnWedstrijden(mijn)
     }
 
+    override suspend fun removeOneFromMijnWedstrijden(wedstrijd: Wedstrijd) {
+        var mijn: MutableList<Wedstrijd>? = getMijnWedstrijden()?.toMutableList()
+        if (mijn.isNullOrEmpty()) {
+            mijn = MutableList(0){wedstrijd}
+        } else {
+            mijn.remove(wedstrijd)
+        }
+        saveMijnWedstrijden(mijn)
+    }
+
     override fun logout() {
         saveMijnWedstrijden(listOf())
         userRepository.logout()
     }
 
     override suspend fun getDeelnemersFromWedstrijd(id: Long): List<Deelnemer>? {
-        lateinit var deelnemers: List<Deelnemer>
+        var deelnemers: List<Deelnemer>? = null
         try {
             deelnemers = wedstrijdService.getDeelnemers(id).sortedWith(compareBy({ it.voornaam.toLowerCase() }, { it.achternaam.toLowerCase() }))
         } catch (e: Exception) {

@@ -31,6 +31,8 @@ class LoginActivity : AppCompatActivity() {
         binding = DataBindingUtil.setContentView(this, R.layout.activity_login)
         binding.llProgressBar.visibility = View.VISIBLE
 
+        title = "Login"
+
         // Als de gebruiker reeds ingelogd is bij het starten van de app, navigeer naar home activity
         loginViewModel.checkIsUserLoggedIn()
 

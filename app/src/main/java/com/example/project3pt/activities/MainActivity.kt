@@ -1,6 +1,9 @@
 package com.example.project3pt.activities
 
+import android.content.Context
 import android.os.Bundle
+import android.view.MotionEvent
+import android.view.inputmethod.InputMethodManager
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController
 import androidx.navigation.fragment.NavHostFragment
@@ -21,5 +24,14 @@ class MainActivity : AppCompatActivity() {
         val navController = this.findNavController(R.id.fragmentID)
 
         NavigationUI.setupWithNavController(bottom_nav_view, navController)
+    }
+
+    // Toetsenbord wegdoen bij wegklikken
+    override fun dispatchTouchEvent(ev: MotionEvent): Boolean {
+        if (currentFocus != null) {
+            val imm = getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
+            imm.hideSoftInputFromWindow(currentFocus!!.windowToken, 0)
+        }
+        return super.dispatchTouchEvent(ev)
     }
 }

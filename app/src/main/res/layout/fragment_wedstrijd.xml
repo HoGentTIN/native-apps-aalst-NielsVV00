@@ -89,7 +89,7 @@
             android:insetBottom="0dp"
             android:padding="0dp"
             android:text="Deelnemen"
-            android:textColor="@android:color/black"
+            android:textColor="@android:color/white"
             app:backgroundTint="@color/colorSecondary"
             app:cornerRadius="0dp"
             app:iconPadding="0dp"

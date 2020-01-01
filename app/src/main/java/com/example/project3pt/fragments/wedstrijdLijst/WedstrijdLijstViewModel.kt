@@ -33,7 +33,7 @@ class WedstrijdLijstViewModel(
                 _wedstrijden.value = wedstrijdRepository.getMijnWedstrijden()
                 _hasWedstrijden.value = hasWedstrijden()
             } else {
-                _wedstrijden.value = wedstrijdRepository.refreshWedstrijden()
+                _wedstrijden.value = wedstrijdRepository.getAll()
             }
         }
     }

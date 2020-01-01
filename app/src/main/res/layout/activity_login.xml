@@ -23,7 +23,8 @@
                 android:paddingLeft="24dp"
                 android:paddingRight="24dp">
 
-                <ImageView android:src="@drawable/logo"
+                <ImageView
+                    android:src="@drawable/logo3pt"
                     android:layout_width="wrap_content"
                     android:layout_height="128dp"
                     android:layout_marginBottom="24dp"
@@ -43,6 +44,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:drawableStart="@drawable/icon_user"
+                        android:drawableTint="@color/donkerGrijs"
                         android:drawablePadding="10dp"
                         android:singleLine="true" />
 
@@ -61,6 +63,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:drawableStart="@drawable/icon_lock"
+                        android:drawableTint="@color/donkerGrijs"
                         android:drawablePadding="10dp"
                         android:inputType="textPassword"
                         android:singleLine="true" />

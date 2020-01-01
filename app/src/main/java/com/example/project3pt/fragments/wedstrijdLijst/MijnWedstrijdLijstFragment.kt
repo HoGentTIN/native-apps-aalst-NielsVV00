@@ -36,6 +36,8 @@ class MijnWedstrijdLijstFragment : Fragment() {
                 inflater, R.layout.fragment_wedstrijd_lijst, container, false
         )
 
+        activity?.title = "Mijn wedstrijden"
+
         vm.isMijnWedstrijden()
         vm.getWedstrijden()
 

@@ -31,6 +31,8 @@ class HomeFragment : Fragment() {
                 inflater, R.layout.fragment_home, container, false
         )
 
+        activity?.title = "Home"
+
         setHasOptionsMenu(true)
 
         homeViewModel.init()

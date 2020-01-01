@@ -33,7 +33,7 @@ class FotoAdapter(val clickListener: FotoListener) : ListAdapter<Foto, FotoAdapt
             item: Foto,
             clickListener: FotoListener
         ) {
-            binding.fotoItem.setImageBitmap(item.getImage())
+            binding.fotoItem.setImageBitmap(item.getImageLowQ())
             binding.foto = item
             binding.clickListener = clickListener
             binding.executePendingBindings()

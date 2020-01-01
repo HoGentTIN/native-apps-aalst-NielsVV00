@@ -1,6 +1,9 @@
 <resources>
     <string name="app_name">Races 3PT</string>
     <string name="str_hint_email">e-mailadres</string>
+    <string name="str_hint_type">type wedstrijd</string>
+    <string name="str_hint_locatie">locatie wedstrijd</string>
+    <string name="str_hint_datum">datum wedstrijd</string>
     <string name="str_hint_password">wachtwoord</string>
     <string name="noggeenaccount">Nog geen account? Maak één aan</string>
     <string name="wedstrijden">Wedstrijden</string>

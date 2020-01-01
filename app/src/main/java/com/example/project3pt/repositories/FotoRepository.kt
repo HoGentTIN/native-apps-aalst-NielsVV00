@@ -3,6 +3,9 @@ package com.example.project3pt.repositories
 import android.util.Log
 import com.example.project3pt.models.Foto
 import com.example.project3pt.services.FotoService
+import okhttp3.MediaType
+import okhttp3.RequestBody
+import org.json.JSONObject
 
 class FotoRepository(
     private val fotoService: FotoService
@@ -26,9 +29,9 @@ class FotoRepository(
         return null
     }
 
-    override suspend fun post(data: String): Foto? {
+    override suspend fun post(foto: Foto): Foto? {
         try {
-            return fotoService.post(data)
+            return fotoService.post(foto)
         } catch (e: Exception) {
             Log.i("fotoPost", e.message)
         }

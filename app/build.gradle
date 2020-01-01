@@ -112,7 +112,7 @@ dependencies {
 
     // Testing
     testImplementation 'org.mockito:mockito-inline:2.13.0'
-
+    testImplementation "io.mockk:mockk:$version_mockk"
     androidTestImplementation 'androidx.test:runner:1.2.0'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
 
