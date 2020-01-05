@@ -7,7 +7,8 @@ Deze app is geschreven voor de triatlonclub "Tri Performance Team" (3PT). Aan de
 
 Aanmelden kan met  
 e-mailadres: docent@hogent.com  
-wachtwoord: azerty  (of door te registreren) 
+wachtwoord: azerty  
+(of door te registreren)
 
 ## Backend 
 
